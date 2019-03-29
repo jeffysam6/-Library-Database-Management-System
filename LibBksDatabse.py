@@ -43,14 +43,14 @@ def searchData(MTy="", Ref="",Tit="",fna="",sna="", Adr1="", Adr2="", pcd="",MNo
 	con.close
 	return rows
 
-def dataUpdate(id,MTy="", Ref="",Tit="",fna="",sna="", Adr1="", Adr2="", pcd="",MNo="", BkID="", Bkt="", Atr="",DBo="", Ddu="", sPr="",LrF="", DoD="", DonL=""):
+'''def dataUpdate(id,MTy="", Ref="",Tit="",fna="",sna="", Adr1="", Adr2="", pcd="",MNo="", BkID="", Bkt="", Atr="",DBo="", Ddu="", sPr="",LrF="", DoD="", DonL=""):
 	con=sqlite3.connect("libbooks.db")
 	cur = con.cursor()
 	cur.execute("UPDATE libbooks SET  MTY=? OR REF=? OR TIT=? OR FNA=? OR SNA=? \
 		OR SNA=? OR ADR1=? OR ADR2=? OR PCD=? OR MNO=? OR BKID=? OR BKT=? OR ATR=? \
 		OR DBO=? OR DDU=? OR SPR=? OR LRF=? OR DOD=? OR DONL=?",(MTy, Ref,Tit,fna,sna, Adr1, Adr2, pcd,MNo, BkID, Bkt, Atr,DBo, Ddu, sPr,LrF, DoD, DonL, id))
 	con.commit()
-	con.close
+	con.close'''
 
 
 
